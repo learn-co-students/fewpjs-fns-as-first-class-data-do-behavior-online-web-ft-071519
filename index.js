@@ -5,7 +5,7 @@ function handleClick(e) {
   displayMessage(greet(timeString))
 }
 function greet(timeString) {
-  hours = timeString.split(":")[0];
+  let hours = timeString.split(":")[0];
   if (hours < 12) {
     return "Good Morning"
   } else if (hours > 17) {
@@ -19,7 +19,7 @@ function greet(timeString) {
   debugger
 }
 function displayMessage(greeting) {
-  document.getElementById("greeting").innerHTML = greeting
+  document.getElementById("greeting").innerText = greeting;
 
 }
 /* End Given Code, don't edit above here...*/
